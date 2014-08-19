@@ -6,21 +6,10 @@
 #mapdiv {
     width: 100%;
     /*background-color: #EEEEEE;*/
-    height: 743px;
+    height: 600px;
     /*height: auto;*/
     position: relative;
-    background: url('http://www.picturesnew.com/media/images/background-image-css-photo.jpg') no-repeat center center;
-}
-
-#mapdiv.background {
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
-        margin:auto;
-        min-width:50%;
-        min-height:50%;
+    background: url("../../../Images/background/board.jpg") no-repeat center center;
 }
 
 /*TOP MENU*/

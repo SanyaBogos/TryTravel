@@ -78,7 +78,7 @@ namespace TravelMap.Models
     public class RegisterModel
     {
         [Required]
-        [Display(Name = "User name")]
+        [Display(Name = "Name")]
         public string UserName { get; set; }
 
         [Required]
@@ -93,6 +93,7 @@ namespace TravelMap.Models
         public string ConfirmPassword { get; set; }
 
         [Required]
+        [RegularExpression("^[A-Za-z]$")]
         public string Surname { get; set; }
 
         [Required]
@@ -101,6 +102,7 @@ namespace TravelMap.Models
 
         public byte[] Photo { get; set; }
 
+        [DataType(DataType.PhoneNumber)]
         public string Phone { get; set; }
 
         [DataType(DataType.EmailAddress)]
