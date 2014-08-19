@@ -315,6 +315,20 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>MapModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="Images\ammap\arrowDown.gif" />
+    <Content Include="Images\ammap\arrowUp.gif" />
+    <Content Include="Images\ammap\export.png" />
+    <Content Include="Images\ammap\homeIcon.gif" />
+    <Content Include="Images\ammap\homeIconWhite.gif" />
+    <Content Include="Images\ammap\minus.gif" />
+    <Content Include="Images\ammap\panDown.gif" />
+    <Content Include="Images\ammap\panLeft.gif" />
+    <Content Include="Images\ammap\panRight.gif" />
+    <Content Include="Images\ammap\panUp.gif" />
+    <Content Include="Images\ammap\plus.gif" />
+    <Content Include="Images\ammap\xIcon.gif" />
+    <Content Include="Images\ammap\xIconH.gif" />
+    <Content Include="Images\background\board.jpg" />
     <Content Include="Models\MapModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MapModel.edmx</DependentUpon>

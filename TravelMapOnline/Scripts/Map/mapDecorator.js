@@ -3,17 +3,17 @@
 AmCharts.ready(function () {
 
     map = new AmCharts.AmMap();
-    map.pathToImages = "http://www.amcharts.com/lib/3/images/";
+    map.pathToImages = "../../../Images/ammap/";
     map.panEventsEnabled = true;
-    map.backgroundColor = "#282828";
-    map.backgroundAlpha = 1;
+    //map.backgroundColor = "#282828";
+    //map.backgroundAlpha = 1;
 
     map.zoomControl.panControlEnabled = true;
     map.zoomControl.zoomControlEnabled = true;
     map.zoomControl.buttonFillColor = "#282828";
 
-    map.mouseWheelZoomEnabled = true;
-    
+    map.zoomDuration = 0.1;
+    map.mouseWheelZoomEnabled = true;    
 
     var dataProvider = {
         map: "worldLow",
@@ -33,18 +33,14 @@ AmCharts.ready(function () {
         selectable: true
     };
 
-    map.addListener('clickMapObject', function (event) {
-                  
+    map.addListener('clickMapObject', function (event) {                  
         alert(event.mapObject.title);
-
     });
 
     function handleGoHome() {
         map.dataProvider = continentsDataProvider;
         map.validateNow();
     }
-
-
 
     map.addListener("homeButtonClicked", handleGoHome);
     map.write("mapdiv");
